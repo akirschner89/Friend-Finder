@@ -182,7 +182,7 @@
 	      </div>
 	      <div class="modal-body">
 	        <h2 id="matchName"></h2>
-	        <img id="matchImg" src="" alt="">
+	        <img id="matchImg" alt="">
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -226,13 +226,12 @@
 		}
 
 		// If all required fields are filled
-		if (validateForm() == true)
-		{
+		if (validateForm() == true) {
 			// Create an object for the user's data
 	    	var userData = {
 	    		name: $("#name").val().trim(),
 	    		photo: $("#photo").val().trim(),
-	    		scores: [$("#q1").val().trim(), $("#q2").val().trim(), $("#q3").val().trim(), $("#q4").val().trim(), $("#q5").val().trim(), $("#q6").val().trim(), $("#q7").val().trim(), $("#q8").val().trim(), $("#q9").val().trim(), $("#q10").val().trim(), ]
+	    		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
 	    	}
 
 	    	console.log(userData);
